@@ -28,10 +28,22 @@ NNC/
 *.mat
 *.pkl
 
-# Literatura e Livros Protegidos por Direitos Autorais
+# Literatura, Artigos e Livros de Referência (Não versionar no GitHub)
 livros/
 Material Didático/
 Dissertação de Mestrado/
+Artigos Referência/
+artigos_nnc/
+specs/
+old/
+
+# PDFs soltos na raiz (manuais e artigos)
+/*.pdf
+
+# Notas de estudo e documentações internas de trabalho
+DIRETRIZES_MESTRADO_ANTIGRAVITY.md
+GUIA_MESTRE_DE_APRENDIZADO_NEUROENGENHARIA.md
+scihub-cli-README.md
 
 # Arquivos Temporários de Dumps e Logs
 *_text.txt
