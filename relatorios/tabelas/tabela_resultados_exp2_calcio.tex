@@ -1,0 +1,24 @@
+\begin{table}[tbp]
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{2.2pt}
+    \caption{Disparos neuronais, influxo de cálcio intracelular e teste $t$ de Student no Experimento 2.}
+    \label{tab:resultados_exp2_calcio}
+    \begin{tabular}{llcccc}
+        \toprule
+        \textbf{Opsina} & \textbf{Padrão}    & \textbf{Disparos/Ciclo} & \textbf{$[\text{Ca}^{2+}]$/Ciclo} & \textbf{Carga Total}                   & \textbf{Teste $t$ ($df=18$)} \\
+        \midrule
+        \multirow{2}{*}{ChR2}
+                        & Fixa ($MS_f$)      & $34{,}10 \pm 0{,}32$    & $4{,}92 \pm 0{,}46$               & \qty{49{,}26}{\text{u.a.}\cdot\second} & $t = -1{,}149$               \\
+                        & Aleatória ($MS_r$) & $36{,}10 \pm 2{,}38$    & $5{,}22 \pm 0{,}67$               & \qty{52{,}21}{\text{u.a.}\cdot\second} & $p = 0{,}2656\ (\text{ns})$  \\
+        \midrule
+        \multirow{2}{*}{Chronos}
+                        & Fixa ($MS_f$)      & $34{,}10 \pm 0{,}32$    & $4{,}96 \pm 0{,}37$               & \qty{49{,}62}{\text{u.a.}\cdot\second} & $t = 1{,}116$                \\
+                        & Aleatória ($MS_r$) & $32{,}70 \pm 0{,}95$    & $4{,}75 \pm 0{,}45$               & \qty{47{,}56}{\text{u.a.}\cdot\second} & $p = 0{,}2791\ (\text{ns})$  \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.2em}
+    \begin{minipage}{0.95\textwidth}
+        \footnotesize \textbf{Nota:} Valores médios $\pm$ desvio padrão sobre $n=10$ ciclos de estimulação ($\qty{280}{\milli\second}$ por ciclo). Unidade de cálcio: $\text{u.a.}\cdot\text{s}$. Teste $t$ de Student bicaudal para amostras independentes sobre a carga de $[\text{Ca}^{2+}](t)$. Ambas as comparações são estatisticamente não significantes ($p > 0{,}05$).
+    \end{minipage}
+\end{table}

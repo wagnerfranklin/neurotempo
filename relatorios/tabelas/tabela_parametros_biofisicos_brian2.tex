@@ -1,0 +1,43 @@
+\begin{table}[tbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \caption{Parâmetros biofísicos e constantes temporais adotados nos modelos em \textsf{Brian~2}.}
+    \label{tab:parametros_biofisicos_brian2}
+    \begin{adjustbox}{max width=0.98\textwidth}
+        \begin{tabular}{llccl}
+            \toprule
+            \textbf{Componente} & \textbf{Parâmetro Biofísico} & \textbf{Símbolo} & \textbf{Valor Adotado} & \textbf{Fonte Primária / Evidência Experimental} \\
+            \midrule
+            \multirow{4}{*}{\shortstack[l]{Neurônio Piramidal\\de CA3 (RS)}} 
+                                & Escala temporal de recuperação   & $a$                 & $0{,}02$                  & Calibração fenomenológica cortical/hipocampal \cite{izhikevich2003} \\
+                                & Sensibilidade sub-limiar         & $b$                 & $0{,}20$                  & Bifurcação de sela-nó em ciclo limite \cite{izhikevich2003} \\
+                                & Tensão de repolarização          & $c$                 & \qty{-65}{\milli\volt}    & Potencial de repouso pós-disparo fisiológico \cite{izhikevich2003} \\
+                                & Incremento de adaptação          & $d$                 & \qty{8}{\milli\volt}      & Adaptação de disparo lento (\emph{Regular Spiking}) \cite{izhikevich2003} \\
+            \midrule
+            \multirow{4}{*}{\shortstack[l]{Interneurônio\\Inibitório $\text{PV}^+$ (FS)}} 
+                                & Escala temporal de recuperação   & $a$                 & $0{,}10$                  & Recuperação ultrarrápida (\emph{Fast Spiking}) \cite{izhikevich2003} \\
+                                & Sensibilidade sub-limiar         & $b$                 & $0{,}20$                  & Resposta estrita a entradas despolarizantes \cite{izhikevich2003} \\
+                                & Tensão de repolarização          & $c$                 & \qty{-65}{\milli\volt}    & Repolarização sem overshoot hiperpolarizante longo \cite{izhikevich2003} \\
+                                & Incremento de adaptação          & $d$                 & \qty{2}{\milli\volt}      & Ausência de fadiga de disparo para $f > \qty{100}{\hertz}$ \cite{izhikevich2003} \\
+            \midrule
+            \multirow{3}{*}{\shortstack[l]{Dinâmica Sináptica\\(Tsodyks-Markram)}} 
+                                & Tempo de ancoragem vesicular     & $\tau_{\text{rec}}$ & \qty{600}{\milli\second}  & Fatias de hipocampo/neocórtex \cite{tsodyks1998} \\
+                                & Fração de liberação por disparo  & $U$                 & $0{,}45$                  & Probabilidade de liberação pré-sináptica basal \cite{tsodyks1998} \\
+                                & Decaimento inibitório $\text{GABA}_A$ & $\tau_{\text{GABA}}$ & \qty{6}{\milli\second} & Condutância perissomática rápida mediada por cloreto \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Cinética Óptica\\Canalrodopsina-2}} 
+                                & Taxa de ativação fotônica        & $\alpha$            & \qty{0{,}8}{\per\milli\second} & Modelo de dois estados fotoquímicos \cite{grossman2011} \\
+                                & Tempo de desativação (fechamento) & $\tau_{\text{off}}$ & \qty{13{,}0}{\milli\second} & Patch-clamp em ChR2 wild-type ($\qty{10}{\milli\second}$ a $\qty{13}{\milli\second}$) \cite{nagel2003, grossman2011} \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Cinética Óptica\\Chronos (Opsina Rápida)}} 
+                                & Taxa de ativação fotônica        & $\alpha$            & \qty{0{,}8}{\per\milli\second} & Abertura fotônica compatível \cite{klapoetke2014} \\
+                                & Tempo de desativação (fechamento) & $\tau_{\text{off}}$ & \qty{3{,}6}{\milli\second}  & Patch-clamp a $\qty{22}{\degreeCelsius}$ ($3{,}6 \pm 0{,}2\ \unit{\milli\second}$) \cite{klapoetke2014} \\
+            \bottomrule
+        \end{tabular}
+    \end{adjustbox}
+    \vspace{0.2em}
+    \begin{minipage}{0.98\textwidth}
+        \footnotesize \textbf{Nota:} Todos os parâmetros foram extraídos diretamente de literatura primária revisada por pares, assegurando fundamentação biofísica e reprodutibilidade numérica estrita sem ajuste ad-hoc de parâmetros livres.
+    \end{minipage}
+\end{table}

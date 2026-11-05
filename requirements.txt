@@ -1,0 +1,15 @@
+# ==============================================================================
+# DEPENDÊNCIAS DE SOFTWARE: neurostimulation-temporal-coding
+# ==============================================================================
+# Modelagem Computacional Biofísica em Brian 2 e Processamento de Sinais
+# Núcleo de Neurociências (NNC - ICB) & PPGEE - UFMG
+# ==============================================================================
+
+brian2>=2.5.4
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+statsmodels>=0.14.0
+pymupdf>=1.24.0
+pytest>=7.0.0

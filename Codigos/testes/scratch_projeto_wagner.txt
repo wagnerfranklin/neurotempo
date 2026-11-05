@@ -1,0 +1,497 @@
+--- PAGE 1 ---
+UNIVERSIDADE FEDERAL DE MINAS GERAIS 
+PROGRAMA DE PÓS-GRADUAÇÃO EM ENGENHARIA 
+ELÉTRICA 
+ 
+ 
+Programação de Memórias Contextuais 
+Artificiais por Estimulações Temporalmente 
+Organizadas 
+ 
+ 
+PROPOSTA DE DISSERTAÇÃO DE MESTRADO 
+ 
+ 
+ 
+Wagner Mathias Fonseca Franklin 
+ 
+ 
+Projeto de pesquisa apresentado ao Programa de 
+Pós-Graduação em Engenharia Elétrica da Universidade 
+Federal de Minas Gerais, linha de pesquisa “Engenharia 
+Biomédica”. 
+ 
+ 
+Belo Horizonte  
+2024 
+
+--- PAGE 2 ---
+UNIVERSIDADE FEDERAL DE MINAS GERAIS 
+PROGRAMA DE PÓS-GRADUAÇÃO EM ENGENHARIA 
+ELÉTRICA 
+ 
+ 
+Programação de Memórias Contextuais 
+Artificiais por Estimulações 
+Temporariamente Organizadas 
+ 
+ 
+_______________________________________________________________ 
+Proponente: Wagner Mathias Fonseca Franklin 
+ 
+_______________________________________________________________ 
+Orientador: Márcio Flávio Dutra Moraes 
+ 
+_______________________________________________________________ 
+Coorientador: Hani Camille Yehia 
+ 
+ 
+ 
+ 
+Projeto de pesquisa apresentado ao Programa de 
+Pós-Graduação 
+em 
+Engenharia 
+Elétrica 
+da 
+Universidade Federal de Minas Gerais, linha de 
+pesquisa “Engenharia Biomédica”. 
+ 
+ 
+ 
+ 
+Belo Horizonte  
+2024 
+
+--- PAGE 3 ---
+1​
+INTRODUÇÃO 
+A interação entre objetos e contextos desempenha um papel importante na 
+formação de memórias e na organização do comportamento em ambientes 
+complexos. A capacidade de associar objetos a seus respectivos contextos 
+envolve a integração de informações sensoriais, espaciais e temporais, uma 
+função atribuída ao hipocampo. Estudos sugerem que o hipocampo é crucial para 
+estabelecer e recuperar associações entre objetos e contextos, permitindo que o 
+sistema nervoso central interprete e organize estímulos externos de maneira 
+adaptativa (Eichenbaum, 2004; Moser et al., 2008). 
+A criação de contextos artificiais em experimentos controlados permite investigar 
+os mecanismos envolvidos na formação de associações objeto-contexto. 
+Protocolos experimentais, como os baseados em tarefas de reconhecimento de 
+objetos, são amplamente utilizados para avaliar a memória associativa e a 
+flexibilidade cognitiva em modelos animais. Esses protocolos possibilitam 
+manipular variáveis como a disposição espacial, temporal e sensorial dos 
+estímulos, criando condições para estudar os fatores que influenciam a dinâmica 
+hipocampal (Dix; Aggleton, 1999; O'Keefe; Nadel, 1978). 
+Neste estudo, serão utilizados estímulos elétricos controlados para criar padrões 
+temporais específicos associados a objetos em um ambiente experimental. O 
+objetivo é avaliar se padrões específicos de estimulação elétrica são suficientes 
+para criar contextos artificiais e estabelecer relações objeto-contexto em 
+camundongos, 
+analisando 
+as 
+dinâmicas 
+comportamentais 
+e 
+fisiológicas 
+subjacentes. Além disso, serão analisadas as oscilações teta hipocampais, que 
+estão associadas à organização temporal de informações e ao processamento 
+cognitivo. Essas oscilações, geradas por interações entre a região CA3 do 
+hipocampo, são moduladas por estímulos externos e podem servir como um 
+marcador para sincronização neural (Buzsáki, 2006). 
+ 
+ 
+
+--- PAGE 4 ---
+2​
+OBJETIVO 
+2.1​ Geral 
+Investigar se padrões organizados de estimulação elétrica são suficientes para 
+criar contextos artificiais e estabelecer relações objeto-contexto em camundongos, 
+analisando como os padrões temporais de estimulação elétrica afetam a dinâmica 
+hipocampal, com ênfase nas oscilações teta como um componente relevante 
+nesse processo. 
+2.2​ Específico 
+●​ Desenvolver e validar instrumentos de registro e estimulação elétrica para 
+experimentos comportamentais e fisiológicos. 
+●​ Avaliar como estímulos elétricos aplicados na região CA3 do hipocampo 
+dorsal influenciam a formação de relações entre objetos e contextos. 
+●​ Analisar padrões de resposta neural a estímulos organizados, incluindo a 
+influência sobre as oscilações teta hipocampais. 
+●​ Correlacionar registros eletrofisiológicos com comportamentos exploratórios 
+em ambientes experimentais controlados. 
+●​ Determinar a relação entre a posição dos camundongos no ambiente e a 
+modulação da atividade neural pelo estímulo aplicado. 
+ 
+3​
+JUSTIFICATIVA 
+Este projeto surge da necessidade de compreender como estímulos externos 
+podem modular a dinâmica hipocampal e influenciar a formação de associações 
+entre objetos e contextos em ambientes experimentais controlados. A interação 
+entre elementos do ambiente e a organização temporal dos estímulos 
+desempenha um papel fundamental na formação de memórias e no 
+comportamento exploratório, sendo o hipocampo uma estrutura central nesse 
+processo (Eichenbaum, 2004; Moser et al., 2008). 
+A criação de contextos artificiais em protocolos experimentais permite investigar 
+os mecanismos pelos quais o sistema nervoso central processa e integra 
+informações espaciais e temporais. Estudos demonstram que a manipulação 
+controlada de estímulos pode alterar a organização hipocampal e influenciar a 
+recuperação de memórias associativas (O'Keefe; Nadel, 1978). A modelagem 
+dessas interações por meio de estímulos elétricos programados possibilita avaliar 
+
+--- PAGE 5 ---
+a capacidade dos animais de associar estímulos a contextos específicos, 
+contribuindo para a caracterização dos processos subjacentes à memória 
+associativa. 
+Além da análise comportamental, a investigação da atividade hipocampal em 
+resposta a esses estímulos pode fornecer informações sobre a sincronização 
+neural e a influência da estimulação externa sobre os padrões oscilatórios da 
+região CA3. As oscilações teta, geradas pela interação entre o hipocampo e 
+estruturas septais, são associadas à organização temporal das informações e 
+podem refletir a adaptação do hipocampo a padrões de estimulação controlados 
+(Buzsáki, 2006). A avaliação desses aspectos pode indicar se a dinâmica 
+hipocampal se ajusta a estímulos externos organizados e se esse ajuste ocorre de 
+forma unilateral ou bilateral. 
+ 
+4​
+METODOLOGIA 
+4.1​ Experimento 
+O procedimento experimental será realizado conforme adaptado do protocolo 
+descrito por Mourão et al. (2021), visando implantar eletrodos de registro e de 
+estimulação em regiões específicas do cérebro de animais. Inicialmente, os 
+animais serão anestesiados com isoflurano e fixados em um aparelho 
+estereotáxico. A área cirúrgica será limpa e desinfectada, e, após uma incisão na 
+calota craniana, serão expostas às referências anatômicas (bregma e lambda) 
+para alinhamento preciso do animal. Com o uso de uma broca, serão feitas 
+perfurações na calota craniana para posicionar os eletrodos nas regiões do 
+hipocampo (CA3) e no giro denteado. As coordenadas exatas das regiões de 
+interesse serão baseadas no atlas de neuroanatomia de camundongos (Paxinos, 
+Franklin, 2019). 
+Os eletrodos de registro e estimulação serão fixados em uma matriz de fibra de 
+vidro, conectados a uma placa de circuito impresso, e posteriormente fixados ao 
+crânio com cimento de zinco. A área exposta será coberta com acrílico dentário. 
+Durante a cirurgia, as respostas sensoriais do animal serão monitoradas. Após o 
+procedimento, os animais receberão analgésico (Tramadol) e antibiótico (Baytril) 
+para recuperação. 
+O experimento será conduzido após um período de recuperação de 7 dias dos 
+animais, visando avaliar a recuperação pós-cirúrgica. Durante esse período, os 
+animais permanecerão sob observação. Após a recuperação, será realizado um 
+
+--- PAGE 6 ---
+registro basal de 4 horas, visando verificar a viabilidade dos eletrodos 
+implantados, coletar dados iniciais de cada animal e habituá-los ao ambiente 
+experimental. A habituação será de cinco minutos e envolverá a adaptação dos 
+animais à caixa de experimentos e aos estímulos do ambiente, como barulho, 
+luminosidade, umidade e temperatura, bem como à presença do peso da matriz 
+na cabeça dos animais. 
+Os animais serão divididos em três grupos. O Grupo 1 será submetido a uma 
+tarefa baseada no protocolo de Dix e Aggleton (1999). Após 24h da primeira 
+habituação, será feita duas outras habituações de cinco minutos à priori, uma por 
+cada etapa do treinamento. Na primeira etapa, duas unidades de um objeto novo 
+(objeto A) serão colocados à esquerda da caixa, e os animais serão estimulados 
+com um padrão 1 de microestimulação elétrica (μES) periódica (7.14 Hz, pulso 
+quadrado bifásico, 25 μA, duração de pulso de 100 μs, padrão 1010101101). Na 
+segunda etapa, feita após três horas da primeira, duas unidades de outro objeto 
+novo (objeto B) serão colocados à direita da caixa, e os animais serão estimulados 
+com um padrão 2 diferente de μES (7.14 Hz, padrão 1110010111). Ambas as 
+etapas ocorrerão na mesma localização física e nas mesmas condições 
+ambientais, para garantir que os animais reconheçam o ambiente como idêntico 
+em ambos os contextos. A amostragem de dados será finalizada quando os 
+animais completarem cinco minutos de exploração total. Na fase de teste, os 
+animais serão expostos a ambos os objetos, o objeto A à esquerda e o B à direita, 
+e receberão estímulos com o padrão 1. A exploração será registrada por cinco 
+minutos, para avaliar a memória dos animais com as associações entre os objetos 
+e os contextos. Um dos objetos será previamente associado a um contexto de 
+estímulo, enquanto o outro não. A ordem dos estímulos e a disposição dos objetos 
+serão balanceadas entre os animais. 
+O Grupo 2 segue os mesmos passos de treinamento do Grupo 1, o que muda é o 
+padrão do estímulo na fase de teste, que neste será o padrão 2.  
+O Grupo 3, grupo controle, seguirá os mesmos passos de treinamento e teste dos 
+Grupos 1 e 2, mas os animais não receberão nenhum tipo de estimulação na fase 
+de teste, mesmo estando com o capacete na cabeça. Nesse grupo, os animais 
+apenas vivenciarão as associações entre os objetos e os contextos durante a fase 
+de teste, sem discriminação entre associações familiares e novas. 
+Os materiais utilizados no experimento serão uma caixa preta de dimensões 
+70x70 cm e dois objetos distintos, projetados para serem identificáveis pelos 
+sentidos de visão e tato dos animais. 
+
+--- PAGE 7 ---
+Ao final do período de registros, os camundongos serão eutanasiados por meio de 
+anestesia e receberão perfusão intracardíaca com tampão fosfato seguido de 
+solução fixadora. Os cérebros dos animais serão então retirados, desidratados em 
+uma solução de sacarose e, em seguida, processados para análise histológica, a 
+fim de confirmar a posição dos eletrodos. 
+ 
+4.2​ Análise de Dados 
+A análise de dados será conduzida para examinar a relação entre padrões de 
+estimulação elétrica, atividade neural hipocampal e comportamentos exploratórios 
+em camundongos. Os dados coletados incluirão registros eletrofisiológicos e 
+comportamentais obtidos em condições controladas de estimulação. Essa 
+abordagem visa correlacionar a sincronização das oscilações teta hipocampais 
+com os padrões de estimulação e as interações comportamentais dos animais no 
+ambiente experimental. 
+Os 
+registros 
+eletrofisiológicos 
+serão 
+analisados 
+utilizando 
+métodos 
+de 
+processamento de sinais, como a transformada de Fourier e a análise de 
+coerência. Essas ferramentas permitem identificar a frequência, amplitude e 
+sincronização das oscilações teta em resposta aos estímulos elétricos aplicados. 
+A análise de coerência, especificamente, será empregada para medir a força da 
+conexão funcional entre diferentes regiões do hipocampo (Buzsáki, 2006). A 
+atividade oscilatória será comparada entre grupos experimentais submetidos a 
+diferentes padrões de estímulo, avaliando a modulação da resposta hipocampal. 
+Os dados comportamentais serão extraídos de gravações de vídeo e analisados 
+utilizando softwares de rastreamento automático, como o Behavython (Passos e 
+Moreira, 2024). Este procedimento permitirá mapear a posição dos camundongos 
+no ambiente e avaliar métricas como tempo de exploração e preferências 
+espaciais. As variáveis comportamentais serão correlacionadas com a atividade 
+neural para examinar como a estimulação afeta o comportamento exploratório e a 
+formação de associações entre objetos e contextos. 
+Os testes estatísticos a serem empregados incluem análises de variância 
+(ANOVA) para comparar grupos experimentais e modelos de regressão linear para 
+identificar 
+relações 
+entre 
+variáveis 
+dependentes 
+(atividade 
+neural 
+e 
+comportamento) e independentes (padrões de estímulo). Para garantir a robustez 
+dos resultados, os dados serão avaliados quanto à normalidade e homogeneidade 
+de variância antes da aplicação dos testes estatísticos (Field, 2018). 
+
+--- PAGE 8 ---
+Os resultados serão apresentados por meio de gráficos e tabelas, destacando as 
+diferenças entre as condições experimentais e os padrões de estimulação. A 
+integração dos dados eletrofisiológicos e comportamentais permitirá compreender 
+a interação entre os estímulos aplicados, a sincronização das oscilações teta e o 
+comportamento exploratório. 
+ 
+2023/2o semestre: 
+●​ EEE913 - Processamento de sinais (4 créditos). 
+●​ EEE954 - Teoria de Sistemas Lineares I (4 créditos). 
+●​ EEE933 - Tópicos Especiais em Engenharia de Telecomunicações (4 
+créditos). 
+●​ EEE952 - Seminário A (1 crédito). 
+2024/1o semestre: 
+●​ FIB858 - Biofísica de Membranas (3 créditos). 
+●​ EEE928 - Técnicas Clássicas de Reconhecimento de Padrões (4 créditos). 
+●​ EEE940 - Ciência e Tecnologia da Fala (4 créditos). 
+2024/2o semestre (em andamento): 
+●​ Elaboração de Trabalho Final. 
+●​ Estágio em Docência (1 crédito). 
+2025/1o semestre: 
+●​ Elaboração de Trabalho Final. 
+ 
+5​
+CRONOGRAMA 
+Abaixo estão definidos os cronogramas referentes aos 24 meses disponíveis 
+para o desenvolvimento do projeto de mestrado. Cada uma das tabelas abaixo 
+representa as etapas a serem desenvolvidas durante o período que engloba três 
+anos. 
+
+--- PAGE 9 ---
+Tabela 1 - Cronograma 2023 
+Atividade/Mês 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+Disciplinas 
+básicas 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+ 
+Tabela 2 - Cronograma 2024. 
+Atividade/Mês 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+Estudo básico 
+sobre 
+neurociências 
+x 
+x 
+x 
+x 
+x 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Revisão 
+bibliográfica 
+ 
+ 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+ 
+ 
+Desenho do 
+protocolo 
+experimental 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+x 
+x 
+x 
+x 
+x 
+ 
+Tabela 3 - Cronograma 2025. 
+Atividade/Mês 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+Coleta de dados 
+x 
+x 
+x 
+ 
+ 
+ 
+ 
+ 
+Análise dos 
+dados coletados 
+ 
+ 
+x 
+x 
+ 
+ 
+ 
+ 
+Elaboração do 
+artigo 
+ 
+ 
+ 
+ 
+x 
+x 
+x 
+ 
+Elaboração da 
+tese 
+ 
+x 
+x 
+x 
+x 
+x 
+x 
+ 
+Elaboração da 
+apresentação 
+ 
+ 
+ 
+ 
+ 
+ 
+x 
+x 
+ 
+
+--- PAGE 10 ---
+6​
+REFERÊNCIAS 
+Buzsáki, G., & Watson, B. O. (2012). Brain rhythms and neural syntax: Implications 
+for efficient coding of cognitive content and neuropsychiatric disease. Dialogues in 
+Clinical Neuroscience, 14(4), 345–367. 
+Buzsáki, G. (2006). Rhythms of the brain. Oxford University Press. 
+Sirota, A., Montgomery, S., Fujisawa, S., Isomura, Y., Zugaro, M., & Buzsáki, G. 
+(2008). Entrainment of neocortical neurons and gamma oscillations by the 
+hippocampal theta rhythm. Neuron, 60(4), 683–697. 
+https://doi.org/10.1016/j.neuron.2008.09.014 
+Whittington, M. A., et al. (2000). Inhibition-based rhythms: Experimental and 
+mathematical observations on network dynamics. International Journal of 
+Psychophysiology: Official Journal of the International Organization of 
+Psychophysiology, 38(3), 315–336. 
+Stumpf, C., Petsche, H., & Gogolak, G. (1962). The significance of the rabbit's 
+septum as a relay station between the midbrain and the hippocampus II: The 
+differential influence of drugs upon both the septal cell firing pattern and the 
+hippocampus theta activity. Electroencephalography and Clinical Neurophysiology, 
+14, 212–219. https://doi.org/10.1016/0013-4694(62)90031-7 
+Buzsáki, G., Leung, L. W., & Vanderwolf, C. H. (1983). Cellular bases of 
+hippocampal EEG in the behaving rat. Brain Research Reviews, 6(2), 139–171. 
+https://doi.org/10.1016/0165-0173(83)90037-1 
+Pedemonte, M., Barrenechea, C., Nunez, A., Gambini, J. P., & Garcia-Austt, E. 
+(1998). Membrane and circuit properties of lateral septum neurons: Relationships 
+with hippocampal rhythms. Brain Research, 800(1–2), 145–153. 
+https://doi.org/10.1016/s0006-8993(98)00517-4 
+Nuñez, A., & Buño, W. (2021). The theta rhythm of the hippocampus: From 
+neuronal and circuit mechanisms to behavior. Frontiers in Cellular Neuroscience, 
+15, 649262. https://doi.org/10.3389/fncel.2021.649262 
+Sharma, A. K., et al. (2007). Mesial temporal lobe epilepsy: Pathogenesis, induced 
+rodent models, and lesions. Toxicologic Pathology, 35(7), 984–999. 
+Basu, J., & Siegelbaum, S. A. (2015). The corticohippocampal circuit, synaptic 
+plasticity, and memory. Cold Spring Harbor Perspectives in Biology, 7(11). 
+https://doi.org/10.1101/cshperspect.a021733 
+
+--- PAGE 11 ---
+Paxinos, G., & Franklin, K. B. J. (2019). Paxinos and Franklin's the mouse brain in 
+stereotaxic coordinates. Second Edition. Academic Press. 
+Buzsáki, G., & Watson, B. O. (2012). Brain rhythms and neural syntax: Implications 
+for efficient coding of cognitive content and neuropsychiatric disease. Dialogues in 
+Clinical Neuroscience, 14(4), 345–367. 
+Dix, S. L., & Aggleton, J. P. (1999). Extending the spontaneous preference test of 
+recognition: Evidence of object-location and object-context recognition. Behavioral 
+Brain Research, 99, 191–200. 
+Kass, R. E., Eden, U. T., & Brown, E. N. (2014). Analysis of neural data (Vol. 491). 
+New York: Springer. 
+Field, A. (2013). Discovering statistics using IBM SPSS statistics (4th ed.).  
+Gramfort, A., Luessi, M., Larson, E., et al. (2013). MNE software for processing 
+MEG and EEG data. Frontiers in Neuroscience, 7, 267. 
+Virtanen, P., et al. (2020). SciPy 1.0: Fundamental algorithms for scientific 
+computing in Python. Nature Methods, 17, 261–272. 
+Eichenbaum, H. (2004). Hippocampus: Cognitive processes and neural 
+representations that underlie declarative memory. Neuron, 44(1), 109-120. 
+Moser, E. I., Kropff, E., & Moser, M. B. (2008). Place cells, grid cells, and the 
+brain’s spatial representation system. Annual Review of Neuroscience, 31, 69-89. 
+O'Keefe, J., & Nadel, L. (1978). The Hippocampus as a Cognitive Map. Oxford 
+University Press. 
+Passos, M. C., & Moreira, J. P. C. (2024). Behavyton (Versão 0.7.0) [Software]. 
+https://github.com/mrdrzit/behavython 

@@ -1,0 +1,26 @@
+\begin{table}[tbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \caption{Resultados numéricos comparativos da transdução optogenética em CA3 (Experimento 2).}
+    \label{tab:resultados_experimento_2_optogenetica}
+    \begin{adjustbox}{max width=0.98\textwidth}
+        \begin{tabular}{llccccc}
+            \toprule
+            \textbf{Variante da Opsina} & \textbf{Padrão Óptico} & \textbf{Disparos} & \textbf{Taxa Média} & \textbf{Fração Aberta $O(t)$} & \textbf{Integral Cálcio $[\text{Ca}^{2+}]$} & \textbf{Variação Relativa ($\Delta$)} \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Canalrodopsina-2 (ChR2)\\$\tau_{\text{off}} = \qty{13{,}0}{\milli\second}$ \cite{nagel2003}}} 
+                                        & Microest. Fixa ($MS_f$)   & 341 & \qty{121{,}79}{\hertz} & $O_{\text{médio}} = 0{,}572$ ($O_{\text{mín}} = 0{,}180$) & \qty{49{,}26}{\text{u.a.}\cdot\second} & \multirow{2}{*}{\shortstack[c]{$\Delta_{\text{taxa}} = 5{,}54\%$ \\ $\Delta_{\text{Cálcio}} = 5{,}66\%$}} \\
+                                        & Microest. Aleat. ($MS_r$) & 361 & \qty{128{,}93}{\hertz} & $O_{\text{médio}} = 0{,}548$ ($O_{\text{mín}} = 0{,}021$) & \qty{52{,}21}{\text{u.a.}\cdot\second} & \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Chronos Ultrarrápida\\$\tau_{\text{off}} = \qty{3{,}6}{\milli\second}$ \cite{klapoetke2014}}} 
+                                        & Microest. Fixa ($MS_f$)   & 341 & \qty{121{,}79}{\hertz} & $O_{\text{médio}} = 0{,}285$ ($O_{\text{mín}} = 0{,}002$) & \qty{49{,}62}{\text{u.a.}\cdot\second} & \multirow{2}{*}{\shortstack[c]{$\Delta_{\text{taxa}} = 4{,}11\%$ \\ $\Delta_{\text{Cálcio}} = 4{,}15\%$}} \\
+                                        & Microest. Aleat. ($MS_r$) & 327 & \qty{116{,}79}{\hertz} & $O_{\text{médio}} = 0{,}279$ ($O_{\text{mín}} = 0{,}000$) & \qty{47{,}56}{\text{u.a.}\cdot\second} & \\
+            \bottomrule
+        \end{tabular}
+    \end{adjustbox}
+    \vspace{0.2em}
+    \begin{minipage}{0.98\textwidth}
+        \footnotesize \textbf{Nota:} Simulação de $\qty{2{,}8}{\second}$ de protocolo óptico (10 ciclos de $\qty{280}{\milli\second}$, com $\qty{140}{\milli\second}$ de estimulação ativa e 6 pulsos de $\qty{7}{\milli\second}$ por ciclo). A integral temporal de cálcio acumulado representa o proxy biofísico da indução transcricional da proteína c-Fos \cite{costa2026}.
+    \end{minipage}
+\end{table}

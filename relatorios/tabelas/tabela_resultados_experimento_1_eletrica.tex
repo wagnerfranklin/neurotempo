@@ -1,0 +1,23 @@
+\begin{table}[tbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{5pt}
+    \caption{Resultados numéricos comparativos da microestimulação elétrica extracelular em CA3 (Experimento 1).}
+    \label{tab:resultados_experimento_1_eletrica}
+    \begin{adjustbox}{max width=0.98\textwidth}
+        \begin{tabular}{lccccc}
+            \toprule
+            \textbf{Padrão de Estimulação} & \textbf{Disparos Totais} & \textbf{Taxa Média Pop.} & \textbf{Fração Vesicular $R_{\text{ss}}$} & \textbf{Fração $R_{\text{mín}}$} & \textbf{Dissimilaridade de van Rossum ($D_R$)} \\
+            \midrule
+            Padrão 1 ($S_1$: \texttt{1010101101}) & $3.037$ & \qty{27{,}12}{\hertz} & $0{,}1058$ & $0{,}0605$ & \multirow{2}{*}{\shortstack[c]{$D_R = 3{,}267 \pm 0{,}164$ \\ $\tilde{D}_R = 73{,}67\% \pm 5{,}89\%$}} \\
+            Padrão 2 ($S_2$: \texttt{1110010111}) & $2.852$ & \qty{25{,}46}{\hertz} & $0{,}1223$ & $0{,}0607$ & \\
+            \midrule
+            \textbf{Diferença Relativa ($\Delta$)} & $6{,}09\%$ & $6{,}09\%$ & --- & --- & \textbf{Divergência temporal acentuada} \\
+            \bottomrule
+        \end{tabular}
+    \end{adjustbox}
+    \vspace{0.2em}
+    \begin{minipage}{0.98\textwidth}
+        \footnotesize \textbf{Nota:} Valores computados ao longo de $\qty{1{,}4}{\second}$ de estimulação contínua (10 ciclos teta) sobre a população de 80 neurônios piramidais. A distância métrica de van Rossum ($D_R$) foi calculada com constante de tempo de integração de $\tau = \qty{10}{\milli\second}$ \cite{vanrossum2001}.
+    \end{minipage}
+\end{table}

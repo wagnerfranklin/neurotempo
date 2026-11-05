@@ -1,0 +1,21 @@
+\begin{table}[tbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{3.5pt}
+    \caption{Quantificação de disparos e teste de equivalência biológica (TOST) na população de CA3 no Experimento 1.}
+    \label{tab:resultados_exp1_disparos}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Padrão} & \textbf{Pulsos/Ciclo} & \textbf{Disparos Totais} & \textbf{Disparos / Célula} & \textbf{Taxa Média Pop.} \\
+        \midrule
+        Padrão 1 ($S_1$) & 6 & $3.037$ & $37{,}96 \pm 4{,}53$ & \qty{27{,}12}{\hertz} $\pm$ \qty{3{,}24}{\hertz} \\
+        Padrão 2 ($S_2$) & 7 & $2.852$ & $35{,}65 \pm 4{,}80$ & \qty{25{,}46}{\hertz} $\pm$ \qty{3{,}43}{\hertz} \\
+        \midrule
+        \textbf{Comparação} & $+16{,}7\%$ & $\Delta = 6{,}09\%$ & \multicolumn{2}{c}{TOST ($15\%$): $t_2 = -5{,}22;\ p_{\text{TOST}} < 10^{-6}$} \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.2em}
+    \begin{minipage}{0.95\textwidth}
+        \footnotesize \textbf{Nota:} Quantificação sobre $N=80$ neurônios piramidais em 10 ciclos teta ($\qty{1{,}4}{\second}$). A equivalência prática foi avaliada pelo procedimento TOST (\emph{Two One-Sided Tests}) com margem fisiológica de $\pm 15\%$ ($\pm 5{,}69$ disparos), comprovando equivalência estatística estrita ($p_{\text{TOST}} < 0{,}001$; sob margem de $10\%$, $p_{\text{TOST}} = 0{,}0124$). O teste $t$ pontual convencional rejeitaria $H_0$ ($t(79) = 3{,}568, p = 0{,}00062$) em função do superpoder amostral de simulações com baixo ruído, contrastando com a equivalência biológica real.
+    \end{minipage}
+\end{table}

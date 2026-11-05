@@ -1,0 +1,30 @@
+\begin{table}[tbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \caption{Resultados numéricos comparativos das simulações computacionais em \textsf{Brian~2}.}
+    \label{tab:resultados_simulacoes_brian2}
+    \begin{adjustbox}{max width=0.98\textwidth}
+        \begin{tabular}{llcccc}
+            \toprule
+            \textbf{Experimento Computacional} & \textbf{Condição / Padrão} & \textbf{Disparos Totais} & \textbf{Taxa Média} & \textbf{Fração Aberta / Vesicular} & \textbf{Métrica de Discriminação} \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Experimento 1: Microestimulação\\Elétrica Extracelular em CA3}} 
+                                               & Padrão 1 ($S_1$)           & $3.037$                  & \qty{27{,}12}{\hertz} & $R_{\text{ss}} = 0{,}1058$ ($R_{\text{mín}} = 0{,}0605$) & \multirow{2}{*}{\shortstack[c]{$\Delta_{\text{taxa}} = 6{,}09\%$ \\ $D_R = 3{,}267 \pm 0{,}164$ ($73{,}67\%$)}} \\
+                                               & Padrão 2 ($S_2$)           & $2.852$                  & \qty{25{,}46}{\hertz} & $R_{\text{ss}} = 0{,}1223$ ($R_{\text{mín}} = 0{,}0607$) & \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Experimento 2A: Optogenética\\ChR2 Wild-Type ($\tau_{\text{off}} = \qty{13{,}0}{\milli\second}$)}} 
+                                               & Microest. Fixa ($MS_f$)    & 341                      & \qty{121{,}79}{\hertz} & $O_{\text{médio}} = 0{,}572$ ($O_{\text{mín}} = 0{,}180$) & \multirow{2}{*}{\shortstack[c]{$\Delta_{\text{taxa}} = 5{,}54\%$ \\ $\Delta_{\text{Cálcio}} = 5{,}66\%$}} \\
+                                               & Microest. Aleat. ($MS_r$)  & 361                      & \qty{128{,}93}{\hertz} & $O_{\text{médio}} = 0{,}548$ ($O_{\text{mín}} = 0{,}021$) & \\
+            \midrule
+            \multirow{2}{*}{\shortstack[l]{Experimento 2B: Optogenética\\Chronos Rápida ($\tau_{\text{off}} = \qty{3{,}6}{\milli\second}$)}} 
+                                               & Microest. Fixa ($MS_f$)    & 341                      & \qty{121{,}79}{\hertz} & $O_{\text{médio}} = 0{,}285$ ($O_{\text{mín}} = 0{,}002$) & \multirow{2}{*}{\shortstack[c]{$\Delta_{\text{taxa}} = 4{,}11\%$ \\ $\Delta_{\text{Cálcio}} = 4{,}15\%$}} \\
+                                               & Microest. Aleat. ($MS_r$)  & 327                      & \qty{116{,}79}{\hertz} & $O_{\text{médio}} = 0{,}279$ ($O_{\text{mín}} = 0{,}000$) & \\
+            \bottomrule
+        \end{tabular}
+    \end{adjustbox}
+    \vspace{0.2em}
+    \begin{minipage}{0.98\textwidth}
+        \footnotesize \textbf{Nota:} Valores computados diretamente das trajetórias temporais. No Experimento~1, a taxa média refere-se à população de 80 células piramidais durante $\qty{1{,}4}{\second}$ de estimulação contínua, com dissimilaridade temporal avaliada pela distância de van Rossum com filtro exponencial ($\tau = \qty{10}{\milli\second}$). No Experimento~2, as taxas e integrais de cálcio intracelular correspondem a $\qty{2{,}8}{\second}$ de ensaio óptico ($\qty{140}{\milli\second}$ de ativação por ciclo de $\qty{280}{\milli\second}$).
+    \end{minipage}
+\end{table}

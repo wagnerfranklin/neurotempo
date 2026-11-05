@@ -1,0 +1,62 @@
+# ==============================================================================
+# GITIGNORE: neurostimulation-temporal-coding (PPGEE / NNC - UFMG)
+# ==============================================================================
+
+# Ambientes Virtuais Python
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+
+# Caches e Bytecodes
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Dados Brutos de Rastreamento Animal e Arquivos Pesados (> 100 MB)
+NNC/
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.h5
+*.mat
+*.pkl
+
+# Literatura e Livros Protegidos por Direitos Autorais
+livros/
+Material Didático/
+Dissertação de Mestrado/
+
+# Arquivos Temporários de Dumps e Logs
+*_text.txt
+*.log
+
+# Arquivos Intermediários de Compilação do LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+relatorios/*.aux
+relatorios/*.bbl
+relatorios/*.blg
+relatorios/*.log
+relatorios/*.out
+relatorios/*.toc
+relatorios/*.synctex.gz
+
+# Configurações de IDE e Agentes
+.vscode/
+.idea/
+.specify/
+.agents/

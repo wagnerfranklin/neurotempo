@@ -1,0 +1,880 @@
+{
+  "generated_at": "2026-09-23T17:09:48.420383+00:00",
+  "summary": {
+    "total": 5,
+    "download_success": 1,
+    "download_failures": 4,
+    "md_attempted": 0,
+    "md_success": 0,
+    "md_failures": 0
+  },
+  "download_failures": [
+    {
+      "identifier": "10.1109/TNN.2003.820440",
+      "normalized_identifier": "10.1109/TNN.2003.820440",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.192063570022583,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1109/TNN.2003.820440 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1585386,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 665.73
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1605496,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1202.584
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183377.8243139,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1569.587
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183378.3631642,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.032
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183379.39447,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1393.841
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183380.7883337,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 27.129
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1016/S0166-4328(98)00079-5",
+      "normalized_identifier": "10.1016/S0166-4328(98)00079-5",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.32405948638916,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1016/S0166-4328(98)00079-5 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1553814,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 897.9
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1574497,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 2666.456
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183378.0533254,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1056.934
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183379.1102896,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.033
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183379.8245323,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1118.094
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183380.9426343,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 5.275
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.1677-07.2007",
+      "normalized_identifier": "10.1523/JNEUROSCI.1677-07.2007",
+      "success": false,
+      "source": "OpenAIRE",
+      "download_url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+      "file_path": null,
+      "file_size": null,
+      "download_time": 11.79288125038147,
+      "title": "Match–Mismatch Processes Underlie Human Hippocampal Responses to Associative Novelty",
+      "year": 2007,
+      "error": "Access denied (403). Tried 4 candidate URLs: https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf => Access denied (403); https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf => Access denied (403); https://europepmc.org/articles/PMC2572808?pdf=render => Access denied (403); http://www.jneurosci.org/content/27/32/8517.full.pdf => Access denied (403)",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1616218,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+          "metadata_found": true,
+          "duration_ms": 911.993
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1637094,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 2729.124
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183378.0736487,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 3827.445
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183379.892894,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.027
+        },
+        {
+          "source": "OpenAlex",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "OpenAlex",
+          "phase": "source_fallback",
+          "priority": 1,
+          "status": "retrying",
+          "reason": "download_failure",
+          "error": "Access denied (403)",
+          "failed_candidates": [
+            {
+              "url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+              "error": "Access denied (403)"
+            }
+          ],
+          "excluded_sources": [
+            "OpenAlex"
+          ]
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "sequential",
+          "priority": 1,
+          "started_at": 1790183382.087275,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 0.187
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "sequential",
+          "priority": 2,
+          "started_at": 1790183382.0874686,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+          "metadata_found": true,
+          "duration_ms": 1524.925
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "download",
+          "priority": 2,
+          "status": "download_failed",
+          "url": "https://europepmc.org/articles/PMC2572808?pdf=render",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "source_fallback",
+          "priority": 2,
+          "status": "retrying",
+          "reason": "download_failure",
+          "error": "Access denied (403)",
+          "failed_candidates": [
+            {
+              "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+              "error": "Access denied (403)"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC2572808?pdf=render",
+              "error": "Access denied (403)"
+            }
+          ],
+          "excluded_sources": [
+            "Europe PMC",
+            "OpenAlex"
+          ]
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "sequential",
+          "priority": 1,
+          "started_at": 1790183384.5140367,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 0.16
+        },
+        {
+          "source": "arXiv",
+          "phase": "sequential",
+          "priority": 2,
+          "started_at": 1790183384.5142033,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.022
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "sequential",
+          "priority": 3,
+          "started_at": 1790183384.5142276,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+          "metadata_found": true,
+          "duration_ms": 3680.964
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+          "error": "Access denied (403)"
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1037/0033-295X.110.4.611",
+      "normalized_identifier": "10.1037/0033-295X.110.4.611",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.678701639175415,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1037/0033-295X.110.4.611 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183381.0291154,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 702.278
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183381.0353746,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 267.468
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183381.3028724,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 257.08
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183381.5599895,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.044
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183381.7320483,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 3734.242
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183385.466298,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 28.393
+        }
+      ],
+      "html_snapshots": null
+    }
+  ],
+  "md_failures": [],
+  "results": [
+    {
+      "identifier": "10.7554/eLife.47314",
+      "normalized_identifier": "10.7554/eLife.47314",
+      "success": true,
+      "source": "OpenAlex",
+      "download_url": "http://hdl.handle.net/10044/1/72805",
+      "file_path": "artigos_nnc\\[2019] - Brian 2, an intuitive and efficient neural simulator.pdf",
+      "file_size": 1746145,
+      "download_time": 8.400341033935547,
+      "title": "Brian 2, an intuitive and efficient neural simulator",
+      "year": 2019,
+      "error": null,
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1482024,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "http://hdl.handle.net/10044/1/72805",
+          "metadata_found": true,
+          "duration_ms": 813.013
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1502056,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC6786860&blobtype=pdf",
+          "metadata_found": true,
+          "duration_ms": 976.737
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183377.9612496,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC6786860&blobtype=pdf",
+          "metadata_found": true,
+          "duration_ms": 1910.127
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183378.126968,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.027
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1109/TNN.2003.820440",
+      "normalized_identifier": "10.1109/TNN.2003.820440",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.192063570022583,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1109/TNN.2003.820440 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1585386,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 665.73
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1605496,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1202.584
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183377.8243139,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1569.587
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183378.3631642,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.032
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183379.39447,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1393.841
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183380.7883337,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 27.129
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1016/S0166-4328(98)00079-5",
+      "normalized_identifier": "10.1016/S0166-4328(98)00079-5",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.32405948638916,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1016/S0166-4328(98)00079-5 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1553814,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 897.9
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1574497,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 2666.456
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183378.0533254,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1056.934
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183379.1102896,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.033
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183379.8245323,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 1118.094
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183380.9426343,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 5.275
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.1677-07.2007",
+      "normalized_identifier": "10.1523/JNEUROSCI.1677-07.2007",
+      "success": false,
+      "source": "OpenAIRE",
+      "download_url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+      "file_path": null,
+      "file_size": null,
+      "download_time": 11.79288125038147,
+      "title": "Match–Mismatch Processes Underlie Human Hippocampal Responses to Associative Novelty",
+      "year": 2007,
+      "error": "Access denied (403). Tried 4 candidate URLs: https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf => Access denied (403); https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf => Access denied (403); https://europepmc.org/articles/PMC2572808?pdf=render => Access denied (403); http://www.jneurosci.org/content/27/32/8517.full.pdf => Access denied (403)",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183377.1616218,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+          "metadata_found": true,
+          "duration_ms": 911.993
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183377.1637094,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 2729.124
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183378.0736487,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 3827.445
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183379.892894,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.027
+        },
+        {
+          "source": "OpenAlex",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "OpenAlex",
+          "phase": "source_fallback",
+          "priority": 1,
+          "status": "retrying",
+          "reason": "download_failure",
+          "error": "Access denied (403)",
+          "failed_candidates": [
+            {
+              "url": "https://www.jneurosci.org/content/jneuro/27/32/8517.full.pdf",
+              "error": "Access denied (403)"
+            }
+          ],
+          "excluded_sources": [
+            "OpenAlex"
+          ]
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "sequential",
+          "priority": 1,
+          "started_at": 1790183382.087275,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 0.187
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "sequential",
+          "priority": 2,
+          "started_at": 1790183382.0874686,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+          "metadata_found": true,
+          "duration_ms": 1524.925
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "download",
+          "priority": 2,
+          "status": "download_failed",
+          "url": "https://europepmc.org/articles/PMC2572808?pdf=render",
+          "error": "Access denied (403)"
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "source_fallback",
+          "priority": 2,
+          "status": "retrying",
+          "reason": "download_failure",
+          "error": "Access denied (403)",
+          "failed_candidates": [
+            {
+              "url": "https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2572808&blobtype=pdf",
+              "error": "Access denied (403)"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC2572808?pdf=render",
+              "error": "Access denied (403)"
+            }
+          ],
+          "excluded_sources": [
+            "Europe PMC",
+            "OpenAlex"
+          ]
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "sequential",
+          "priority": 1,
+          "started_at": 1790183384.5140367,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 0.16
+        },
+        {
+          "source": "arXiv",
+          "phase": "sequential",
+          "priority": 2,
+          "started_at": 1790183384.5142033,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.022
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "sequential",
+          "priority": 3,
+          "started_at": 1790183384.5142276,
+          "status": "success",
+          "can_handle": true,
+          "pdf_url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+          "metadata_found": true,
+          "duration_ms": 3680.964
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "download",
+          "priority": 1,
+          "status": "download_failed",
+          "url": "http://www.jneurosci.org/content/27/32/8517.full.pdf",
+          "error": "Access denied (403)"
+        }
+      ],
+      "html_snapshots": null
+    },
+    {
+      "identifier": "10.1037/0033-295X.110.4.611",
+      "normalized_identifier": "10.1037/0033-295X.110.4.611",
+      "success": false,
+      "source": null,
+      "download_url": null,
+      "file_path": null,
+      "file_size": null,
+      "download_time": 4.678701639175415,
+      "title": null,
+      "year": null,
+      "error": "Could not find PDF URL for 10.1037/0033-295X.110.4.611 from any source",
+      "md_path": null,
+      "md_success": null,
+      "md_error": null,
+      "source_attempts": [
+        {
+          "source": "OpenAlex",
+          "phase": "fast_parallel",
+          "priority": 1,
+          "started_at": 1790183381.0291154,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 702.278
+        },
+        {
+          "source": "Europe PMC OA",
+          "phase": "fast_parallel",
+          "priority": 2,
+          "started_at": 1790183381.0353746,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 267.468
+        },
+        {
+          "source": "Europe PMC",
+          "phase": "fast_parallel",
+          "priority": 3,
+          "started_at": 1790183381.3028724,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 257.08
+        },
+        {
+          "source": "arXiv",
+          "phase": "fast_parallel",
+          "priority": 4,
+          "started_at": 1790183381.5599895,
+          "status": "skipped",
+          "can_handle": false,
+          "reason": "cannot_handle",
+          "duration_ms": 0.044
+        },
+        {
+          "source": "OpenAIRE",
+          "phase": "slow_sequential",
+          "priority": 1,
+          "started_at": 1790183381.7320483,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 3734.242
+        },
+        {
+          "source": "Sci-Hub",
+          "phase": "slow_sequential",
+          "priority": 2,
+          "started_at": 1790183385.466298,
+          "status": "no_result",
+          "can_handle": true,
+          "duration_ms": 28.393
+        }
+      ],
+      "html_snapshots": null
+    }
+  ]
+}
