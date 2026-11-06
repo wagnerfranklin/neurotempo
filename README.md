@@ -7,108 +7,98 @@
 
 > **In silico Bio-computational Modeling of Temporally Coded Electrical and Optogenetic Neurostimulation in Hippocampal CA3 Networks**
 
-Este repositório contém os modelos computacionais, rotinas de simulação biofísica e testes de hipóteses desenvolvidos na dissertação de mestrado pelo **Programa de Pós-Graduação em Engenharia Elétrica (PPGEE)** e pelo **Núcleo de Neurociências (NNC - ICB/UFMG)** na Universidade Federal de Minas Gerais.
+Este repositório contém a infraestrutura computacional, modelos biofísicos de redes neurais e testes estatísticos de hipóteses desenvolvidos na dissertação de mestrado pelo **Programa de Pós-Graduação em Engenharia Elétrica (PPGEE)** e pelo **Núcleo de Neurociências (NNC - ICB/UFMG)** na Universidade Federal de Minas Gerais.
+
+Para acompanhar a evolução detalhada do código, novos módulos implementados e justificativas científicas a cada versão, consulte o histórico completo em [**CHANGELOG.md**](CHANGELOG.md).
 
 ---
 
-## 🔬 Visão Geral do Projeto
+## 🔬 Escopo Científico
 
-A estimulação neural tradicional frequentemente utiliza trens periódicos de pulsos em alta ou baixa frequência. Em contrapartida, evidências pioneiras do NNC demonstram que o sistema nervoso central é sensível à **sintaxe temporal dos intervalos entre pulsos (IPIs)**, permitindo que trens de pulsos com a mesma carga e frequência média recrutem estados de rede distintos (análogo a uma porta de comunicação serial assíncrona).
+O projeto investiga os mecanismos biofísicos e topológicos que permitem a microcircuitos recorrentes da sub-região **CA3 do hipocampo** decodificar **padrões temporais de estimulação**, avaliando a hipótese de **comunicação serial assíncrona** no encéfalo.
 
-Este projeto desenvolve um **Gêmeo Digital (*Digital Twin*) em Brian 2** do microcircuito de CA3 para responder a perguntas centrais da neuroengenharia:
-1. **Biofísica do Transdutor:** Por que a estimulação elétrica direta preserva a precisão temporal de milissegundos enquanto a Canalrodopsina-2 clássica (ChR2 wild-type, $\tau_{\text{off}} \approx 13\text{ ms}$) atua como um filtro passa-baixas biológico? O uso de opsinas ultrarrápidas (Chronos, $\tau_{\text{off}} \approx 3{,}6\text{ ms}$) restabelece a fidelidade temporal?
-2. **Dinâmica de Rede:** Como o balanço excitatório/inibitório (80 neurônios piramidais RS + 20 interneurônios Fast-Spiking) e a plasticidade de curto prazo (Tsodyks-Markram) filtram padrões temporais fixos versus estocásticos e livres de escala (*Scale-Free*)?
-3. **Topologia de Mundo Pequeno (*Small-World*):** Como a conectividade recorrente e modular de CA3 governa a transição entre segregação de informação e sincronização global?
+O modelo atua como um **Gêmeo Digital (*Digital Twin*) em Brian 2**, confrontando os limites de transdução entre duas modalidades físicas:
+1. **Microestimulação Elétrica Extracelular:** Transmissão instantânea de carga somática com fidelidade temporal sub-milissegúndica.
+2. **Estimulação Optogenética:** Avaliação da filtragem passa-baixas biológica imposta pela cinética de desativação de canalrodopsinas clássicas (ChR2 Wild-Type, $\tau_{\text{off}} \approx 13\text{ ms}$) versus opsinas ultrarrápidas de última geração (Chronos, $\tau_{\text{off}} \approx 3{,}6\text{ ms}$).
 
 ---
 
 ## 📚 Fundamentação Teórica
 
-O arcabouço computacional e metodológico deste projeto é fundamentado em três pilares da literatura:
+A modelagem é ancorada em três pilares canônicos da literatura revisada por pares:
 
-* **Nível Celular (Detecção de Coincidência):**  
+* **Nível Celular (Detecção de Coincidência Temporal):**  
   *König, Engel & Singer (1996)* — *Integrator or coincidence detector? The role of the cortical neuron revisited*, **Trends in Neurosciences**.  
-  Demonstra que o estado de alta condutância (*in vivo*) e o *feedback* inibitório rápido estreitam a janela de integração para $< 5\text{ ms}$, tornando o neurônio um detector de coincidência temporal.
-* **Nível Topológico (Estrutura de Grafos Complexos):**  
-  *Liao, Vasilakos & He (2017)* — *Small-world human brain networks: Perspectives and challenges*, **Neuroscience and Biobehavioral Reviews**.  
-  Demonstra que circuitos corticais e hipocampais operam sob arquitetura *Small-World* (Watts-Strogatz), equilibrando agrupamento local (segregação) e integração eficiente.
-* **Nível Sistêmico e Protocolo Experimental:**  
+  Demonstra que o estado de alta condutância (*in vivo*) e o balanço excitatório/inibitório estreitam a constante de tempo efetiva de membrana ($\tau_{\text{eff}} < 5\text{ ms}$), tornando o neurônio um detector de sincronicidade e de intervalos precisos.
+* **Nível Topológico (Grafos de Mundo Pequeno e Hubs GABAérgicos):**  
+  *Liao, Vasilakos & He (2017)* — *Small-world human brain networks: Perspectives and challenges*, **Neurosci. Biobehav. Rev.**  
+  *Guzman et al. (2016)* — *Synaptic mechanisms of pattern completion in the hippocampal CA3 network*, **Science**.  
+  *Bonifazi et al. (2009)* — *GABAergic hub neurons orchestrate synchrony in developing hippocampal networks*, **Science**.  
+  *Bartos, Vida & Jonas (2007)* — *Synaptic mechanisms of coordinated interneuron network oscillations*, **Nat. Rev. Neurosci.**  
+  Demonstram que a rede hipocampal equilibra segregação modular local e integração global eficiente através de colaterais recorrentes e redes interneuronais acopladas.
+* **Nível Sistêmico e Protocolo Experimental (Comunicação Serial Assíncrona):**  
   *Mourão et al. (2016)* — *Triggering Different Brain States Using Asynchronous Serial Communication to the Rat Amygdala*, **Cerebral Cortex**.  
-  Demonstração empírica do NNC/UFMG de que palavras binárias com carga idêntica acionam circuitos cerebrais e comportamentos aversivos específicos com base exclusiva no padrão temporal dos pulsos.
+  *Cota, Cançado & Moraes (2023)* — *On temporal scale-free non-periodic stimulation and its mechanisms as an infinite improbability drive of the brain's functional connectogram*, **Frontiers in Neuroinformatics**.  
+  Comprovam experimentalmente no NNC/UFMG que palavras temporais com carga elétrica e frequência média rigorosamente equivalentes acionam estados neurais, dinâmicas de plasticidade e comportamentos completamente distintos.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Arquitetura do Repositório
 
 ```
 neurostimulation-temporal-coding/
-├── .gitignore                      <- Filtro de exclusão (vídeos brutos, PDFs com copyright, venv)
-├── LICENSE                         <- GNU General Public License v3 (GPLv3)
-├── README.md                       <- Apresentação e documentação do projeto
+├── CHANGELOG.md                    <- Linha do tempo de versões e alterações detalhadas
+├── LICENSE                         <- Licença GNU General Public License v3 (GPLv3)
+├── README.md                       <- Documentação geral e visão panorâmica da pesquisa
 ├── requirements.txt                <- Dependências Python reprodutíveis
 │
-├── Codigos/                        <- Scripts e modelos em Brian 2
-│   ├── testes/
-│   │   ├── experimento_1_eletrica_wagner_brian2.py     <- Simulação de microestimulação elétrica
-│   │   ├── experimento_2_optogenetica_laura_brian2.py  <- Simulação ChR2 vs Chronos
-│   │   └── teste_metodo_cientifico_laura_msf_vs_msr.py <- Avaliação estatística de equivalência
-│   └── analise_bancada_consolidada/                    <- Pipelines de processamento
+├── Codigos/                        <- Modelos computacionais em Brian 2 e rotinas de análise
+│   ├── testes/                     <- Simulações biofísicas, benchmarks e testes de hipóteses
+│   └── analise_bancada_consolidada/<- Processamento e extração de dados experimentais
 │
-├── relatorios/                     <- Relatórios científicos e dissertação
-│   ├── relatorio_cientifico.tex    <- Texto da dissertação / relatório técnico
+├── relatorios/                     <- Dissertação e relatórios técnicos em LaTeX
+│   ├── relatorio_simulacao.tex     <- Documento mestre da dissertação
 │   ├── referencias.bib             <- Base bibliográfica completa
-│   └── figuras/                    <- Gráficos e painéis gerados em alta resolução
+│   ├── tabelas/                    <- Tabelas quantitativas compiladas
+│   └── figuras/                    <- Gráficos e painéis em alta resolução (300 DPI e vetor PDF)
 │
-└── artigos_nnc/                    <- Documentação dos experimentos biológicos do laboratório
+└── specs/                          <- Especificações formais de engenharia (Spec Kit)
+    └── 001-ca3-recurrent-simulation/ <- Requisitos, equações e planos de implementação
 ```
 
 ---
 
-## 🚀 Instalação e Uso
+## 🚀 Instalação e Ambiente
 
-### 1. Clonar o Repositório
+O projeto utiliza o simulador **Brian 2** em ambiente Python 3:
+
 ```bash
-git clone https://github.com/SEU_USUARIO/neurostimulation-temporal-coding.git
+# 1. Clonar o repositório
+git clone https://github.com/wagnerfranklin/neurostimulation-temporal-coding.git
 cd neurostimulation-temporal-coding
-```
 
-### 2. Configurar o Ambiente Virtual Python
-```bash
+# 2. Configurar o ambiente virtual
 python -m venv .venv
+source .venv/bin/activate  # No Windows: .venv\Scripts\Activate.ps1
 
-# No Linux/macOS:
-source .venv/bin/activate
-
-# No Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-```
-
-### 3. Instalar Dependências
-```bash
+# 3. Instalar dependências estritas
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Executar as Simulações
-```bash
-# Simulação da estimulação elétrica (Padrão 1 vs Padrão 2 em CA3):
-python Codigos/testes/experimento_1_eletrica_wagner_brian2.py
-
-# Simulação da filtragem biofísica optogenética (ChR2 vs Chronos):
-python Codigos/testes/experimento_2_optogenetica_laura_brian2.py
-```
+As simulações numéricas e análises estatísticas são executadas a partir do diretório raiz utilizando os scripts localizados em `Codigos/testes/`.
 
 ---
 
-## 📜 Licença
+## 📜 Licença e Propriedade Intelectual
 
-Este projeto é distribuído sob a licença **GNU General Public License v3 (GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para obter o texto integral.
+Este projeto é software livre acadêmico licenciado sob os termos da **GNU General Public License v3 (GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para obter os termos integrais de cópia, distribuição e modificação.
 
 ---
 
-## 🏛️ Autoria e Afiliação
+## 🏛️ Autoria e Vínculo Institucional
 
-* **Pesquisador:** Wagner Franklin
-* **Orientação:** Prof. Dr. Márcio Flávio Dutra Moraes
-* **Programa:** Programa de Pós-Graduação em Engenharia Elétrica (PPGEE / UFMG)
-* **Laboratório:** Núcleo de Neurociências (NNC) — Departamento de Fisiologia e Biofísica, Instituto de Ciências Biológicas (ICB / UFMG)
+* **Pesquisador:** Wagner Mathias Fonseca Franklin (Engenheiro Mecatrônico)
+* **Orientação:** Prof. Dr. Márcio Flávio Dutra Moraes e Prof. Dr. Hani Camille Yehia
+* **Programa:** Programa de Pós-Graduação em Engenharia Elétrica (**PPGEE / UFMG**)
+* **Laboratório:** Núcleo de Neurociências (**NNC**) — Departamento de Fisiologia e Biofísica, Instituto de Ciências Biológicas (**ICB / UFMG**)
