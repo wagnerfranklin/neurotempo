@@ -40,9 +40,8 @@ specs/
 Codigos/Computational Neuroscience Course/
 Codigos/analise_bancada_consolidada/figuras/
 
-# PDFs soltos na raiz e PDFs gerados de compilação da dissertação
+# PDFs soltos na raiz (não versionar artigos ou documentos avulsos na raiz)
 /*.pdf
-relatorios/relatorio_simulacao.pdf
 
 # Arquivos temporários, rascunhos e backups de edição
 scratch_*
