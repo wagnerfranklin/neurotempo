@@ -17,7 +17,7 @@ Para acompanhar a evolução detalhada do código, novos módulos implementados 
 
 O projeto investiga os mecanismos biofísicos e topológicos que permitem a microcircuitos recorrentes da sub-região **CA3 do hipocampo** decodificar **padrões temporais de estimulação**, avaliando a hipótese de **comunicação serial assíncrona** no encéfalo.
 
-O modelo atua como um **Gêmeo Digital (*Digital Twin*) em Brian 2**, confrontando os limites de transdução entre duas modalidades físicas:
+O trabalho desenvolve um **modelo computacional biofísico em Brian 2**, confrontando os limites de transdução entre duas modalidades físicas:
 1. **Microestimulação Elétrica Extracelular:** Transmissão instantânea de carga somática com fidelidade temporal sub-milissegúndica.
 2. **Estimulação Optogenética:** Avaliação da filtragem passa-baixas biológica imposta pela cinética de desativação de canalrodopsinas clássicas (ChR2 Wild-Type, $\tau_{\text{off}} \approx 13\text{ ms}$) versus opsinas ultrarrápidas de última geração (Chronos, $\tau_{\text{off}} \approx 3{,}6\text{ ms}$).
 

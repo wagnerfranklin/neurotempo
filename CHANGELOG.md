@@ -6,7 +6,7 @@ O formato é baseado no padrão [Keep a Changelog](https://keepachangelog.com/pt
 
 ---
 
-## [Não Lançado / Em Desenvolvimento] — Marco 2: Gêmeo Digital Espacialmente Incorporado de CA3
+## [Não Lançado / Em Desenvolvimento] — Marco 2: Modelo Computacional Espacialmente Incorporado de CA3
 
 ### Adicionado
 * **Estrutura de Grafo Espacial nas 4 Vias Sinápticas:**
