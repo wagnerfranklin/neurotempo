@@ -1,5 +1,6 @@
 # ==============================================================================
 # GITIGNORE: neurostimulation-temporal-coding (PPGEE / NNC - UFMG)
+# Repositório Mínimo Reprodutível de Modelagem Computacional
 # ==============================================================================
 
 # Ambientes Virtuais Python
@@ -35,10 +36,19 @@ Dissertação de Mestrado/
 Artigos Referência/
 artigos_nnc/
 specs/
-old/
+**/old/
+Codigos/Computational Neuroscience Course/
+Codigos/analise_bancada_consolidada/figuras/
 
-# PDFs soltos na raiz (manuais e artigos)
+# PDFs soltos na raiz e PDFs gerados de compilação da dissertação
 /*.pdf
+relatorios/relatorio_simulacao.pdf
+
+# Arquivos temporários, rascunhos e backups de edição
+scratch_*
+*.tmp
+* - copia.*
+*_backup_pre_*
 
 # Notas de estudo e documentações internas de trabalho
 DIRETRIZES_MESTRADO_ANTIGRAVITY.md
@@ -49,11 +59,31 @@ scihub-cli-README.md
 *_text.txt
 *.log
 
+# Scripts de testes obsoletos e figuras descartadas
+Codigos/testes/*.png
+Codigos/testes/degrau1_izhikevich_gui.py
+Codigos/testes/modelo_pilorico_brian2_comentado.py
+Codigos/testes/prototipo_stdp_benchmark.py
+Codigos/testes/simulacao_optogenetica_vs_eletrica_phase_locking.py
+Codigos/testes/teste_metodo_cientifico_laura_msf_vs_msr.py
+Codigos/testes/scratch_projeto_wagner.txt
+Codigos/analise_bancada_consolidada/simulacao_lif_brian2.py
+
+# Figuras e tabelas não referenciadas no relatório
+relatorios/figuras/experimento_1_optogenetica_laura_brian2.*
+relatorios/figuras/experimento_2_eletrica_wagner_brian2.*
+relatorios/figuras/experimento_*_brian2.pdf
+relatorios/figuras/painel_fotos_testes_preferencia.png
+relatorios/tabelas/tabela_cronograma.tex
+relatorios/tabelas/tabela_parametros_biofisicos_brian2.tex
+relatorios/tabelas/tabela_resultados_experimento_*.tex
+relatorios/tabelas/tabela_resultados_simulacoes_brian2.tex
+relatorios/tabelas/tabela_resumo_estatistico.tex
+
 # Arquivos Intermediários de Compilação do LaTeX
 *.aux
 *.bbl
 *.blg
-*.log
 *.out
 *.toc
 *.synctex.gz
