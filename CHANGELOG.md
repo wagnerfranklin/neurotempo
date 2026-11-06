@@ -14,3 +14,5 @@ Registro cronológico estrito de versões e alterações metodológicas implemen
 * **Simulação de Filtragem Optogenética (`simulacao/S_experimento_2_optogenetica_laura_brian2.py`):**
   * Implementação da cinética de fotoisomerização de 2 estados para comparação de transdução entre Canalrodopsina-2 clássica (ChR2 wild-type, τ_off = 13.0 ms; Grossman et al., 2011) e opsina ultrarrápida (Chronos, τ_off = 3.6 ms; Klapoetke et al., 2014).
   * Quantificação do filtro passa-baixas biológico sobre pulsos de 7 ms em bins de 14 ms e cálculo da integral de cálcio intracelular como proxy de ativação celular.
+* **Fundamentação Bibliográfica (`relatorios/referencias.bib`):**
+  * Parâmetros biofísicos de condutância e cinéticas de transdução fundamentados na literatura indexada no arquivo `relatorios/referencias.bib`.
