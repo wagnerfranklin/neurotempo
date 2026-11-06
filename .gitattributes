@@ -1,0 +1,12 @@
+# ==============================================================================
+# GITHUB LINGUIST CONFIGURATION: NeuroTempo
+# ==============================================================================
+# Define relatórios técnicos em LaTeX como documentação, excluindo TeX e BibTeX
+# das estatísticas de linguagens do repositório para refletir o núcleo em Python.
+
+# Marcar pasta de relatórios como documentação
+relatorios/** linguist-documentation=true
+
+# Ocultar LaTeX e BibTeX das estatísticas de linguagem
+*.tex linguist-detectable=false
+*.bib linguist-detectable=false
