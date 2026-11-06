@@ -1,6 +1,6 @@
 # NeuroTempo
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.14.7](https://img.shields.io/badge/python-3.14.7-blue.svg)](https://www.python.org/downloads/)
 [![Brian 2 Simulator](https://img.shields.io/badge/simulator-Brian%202-brightgreen.svg)](https://briansimulator.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Institution: UFMG](https://img.shields.io/badge/UFMG-PPGEE%20%2F%20NNC-red.svg)](https://www.ppgee.ufmg.br/)
@@ -65,7 +65,7 @@ neurotempo/
 
 ## 🚀 Instalação e Ambiente
 
-O projeto utiliza o simulador **Brian 2** em ambiente Python 3:
+O projeto utiliza o simulador **Brian 2** em ambiente **Python 3.14.7**:
 
 ```bash
 # 1. Clonar o repositório
