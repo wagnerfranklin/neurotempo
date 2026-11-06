@@ -9,7 +9,7 @@ Registro cronológico estrito de versões e alterações metodológicas implemen
 ### Metodologia e Modelagem
 * **Simulação de Microestimulação Elétrica em CA3 (`simulacao/S_experimento_1_eletrica_wagner_brian2.py`):**
   * Modelagem de microcircuito de 100 neurônios (80 piramidais RS + 20 interneurônios FS) utilizando o formalismo dinâmico 2D de Izhikevich (2003).
-  * Sinapses recorrentes excitatórias (AMPA, $\tau = 2\text{ ms}$) e inibitórias ($\text{GABA}_A$, $\tau = 6\text{ ms}$) com depressão sináptica de curto prazo de Tsodyks-Markram (1998) ($\tau_{\text{rec}} = 600\text{ ms}, U_{\text{SE}} = 0{,}45$).
+  * Sinapses recorrentes excitatórias (AMPA, $\tau = 2\text{ ms}$) e inibitórias ($\text{GABA}_A$, $\tau = 6\text{ ms}$) com depressão sináptica de curto prazo de Tsodyks-Markram (1998) ($\tau_{rec} = 600\text{ ms}, U_{\text{SE}} = 0{,}45$).
   * Injeção de pulsos elétricos contínuos sob envelope teta de $140\text{ ms}$ ($7{,}14\text{ Hz}$).
 * **Simulação de Filtragem Optogenética (`simulacao/S_experimento_2_optogenetica_laura_brian2.py`):**
   * Implementação da cinética de fotoisomerização de 2 estados para comparação de transdução entre Canalrodopsina-2 clássica (ChR2 wild-type, $\tau_{\text{off}} = 13{,}0\text{ ms}$; Grossman et al., 2011) e opsina ultrarrápida (Chronos, $\tau_{\text{off}} = 3{,}6\text{ ms}$; Klapoetke et al., 2014).
