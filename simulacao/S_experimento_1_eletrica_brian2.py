@@ -1,6 +1,6 @@
 """
 ========================================================================================
-EXPERIMENTO COMPUTACIONAL 1 (BRIAN 2): ESTIMULAÇÃO ELÉTRICA EXTRACELULAR (WAGNER FRANKLIN)
+EXPERIMENTO COMPUTACIONAL 1 (BRIAN 2): ESTIMULAÇÃO ELÉTRICA EXTRACELULAR EM CA3
 COMPARAÇÃO DIRETA DE TRANSMISSÃO ENTRE PADRÃO 1 (S1) E PADRÃO 2 (S2) EM CA3
 ========================================================================================
 Parâmetros do Protocolo Experimental (CEUA/UFMG):
@@ -371,12 +371,16 @@ axes[2, 1].set_ylim(-85, 45)
 # Ajuste global de espaçamento entre subplots
 plt.subplots_adjust(top=0.95, bottom=0.10, left=0.09, right=0.96, hspace=0.65, wspace=0.18)
 
-out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "relatorios", "figuras")
+out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "relatorios", "figuras", "simulacao")
 os.makedirs(out_dir, exist_ok=True)
-out_file_png = os.path.join(out_dir, "experimento_1_eletrica_wagner_brian2.png")
-out_file_pdf = os.path.join(out_dir, "experimento_1_eletrica_wagner_brian2.pdf")
+out_file_png = os.path.join(out_dir, "S_experimento_1_eletrica_brian2.png")
+out_file_pdf = os.path.join(out_dir, "S_experimento_1_eletrica_brian2.pdf")
 
 plt.savefig(out_file_png, dpi=300)
 plt.savefig(out_file_pdf)
+
+# Compatibilidade com figuras do relatório compilado
+plt.savefig(os.path.join(out_dir, "S_experimento_1_eletrica_wagner_brian2.png"), dpi=300)
+
 plt.close()
 print(f"\n[OK] Gráfico do Experimento 1 salvo com sucesso em:\n  - {out_file_png}\n  - {out_file_pdf}")

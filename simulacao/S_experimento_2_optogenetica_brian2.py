@@ -1,9 +1,9 @@
 """
 ========================================================================================
-EXPERIMENTO COMPUTACIONAL 2 (BRIAN 2): ESTIMULAÇÃO OPTOGENÉTICA (LAURA COSTA, 2026)
+EXPERIMENTO COMPUTACIONAL 2 (BRIAN 2): FILTRAGEM TEMPORAL OPTOGENÉTICA EM CA3
 ANÁLISE DE FILTRAGEM BIOFÍSICA: ChR2 WILD-TYPE (tau_off = 13.0 ms) vs CHRONOS (tau_off = 3.6 ms)
 ========================================================================================
-Parâmetros da Dissertação de Laura Amado Costa (UFMG, 2026):
+Parâmetros Biofísicos e Protocolo Experimental:
   - Alvo Anatômico: Hipocampo Ventral (Sub-região CA3)
   - Coordenadas Estereotáxicas (pág. 33):
       Injeção viral: AP: -3.10 mm; ML: ±3.00 mm; DV: -3.90 mm
@@ -285,17 +285,16 @@ axes[3, 1].set_ylim(0.0, max_ca * 1.25)
 
 plt.subplots_adjust(top=0.96, bottom=0.08, left=0.09, right=0.96, hspace=0.68, wspace=0.18)
 
-out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "relatorios", "figuras")
+out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "relatorios", "figuras", "simulacao")
 os.makedirs(out_dir, exist_ok=True)
-out_file_png = os.path.join(out_dir, "experimento_2_optogenetica_laura_brian2.png")
-out_file_pdf = os.path.join(out_dir, "experimento_2_optogenetica_laura_brian2.pdf")
+out_file_png = os.path.join(out_dir, "S_experimento_2_optogenetica_brian2.png")
+out_file_pdf = os.path.join(out_dir, "S_experimento_2_optogenetica_brian2.pdf")
 
 plt.savefig(out_file_png, dpi=300)
 plt.savefig(out_file_pdf)
 
-# Salva também como experimento_1_optogenetica para retrocompatibilidade
-plt.savefig(os.path.join(out_dir, "experimento_1_optogenetica_laura_brian2.png"), dpi=300)
-plt.savefig(os.path.join(out_dir, "experimento_1_optogenetica_laura_brian2.pdf"))
+# Compatibilidade com figuras do relatório compilado
+plt.savefig(os.path.join(out_dir, "S_experimento_2_optogenetica_laura_brian2.png"), dpi=300)
 
 plt.close()
 print(f"\n[OK] Gráfico do Experimento 2 salvo com sucesso em:\n  - {out_file_png}\n  - {out_file_pdf}")

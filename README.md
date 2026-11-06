@@ -23,23 +23,19 @@ O trabalho desenvolve um **modelo computacional biofísico em Brian 2**, confron
 
 ---
 
-## 📚 Fundamentação Teórica
+## 🔬 Resumo da Pesquisa
 
-A modelagem é ancorada em três pilares canônicos da literatura revisada por pares:
+Este projeto estabelece uma estrutura rigorosa de modelagem biofísica computacional em **Brian 2** para investigar o processamento temporal de sinais e os limites de transmissão de informação na sub-região CA3 do hipocampo.
 
-* **Nível Celular (Detecção de Coincidência Temporal):**  
-  *König, Engel & Singer (1996)* — *Integrator or coincidence detector? The role of the cortical neuron revisited*, **Trends in Neurosciences**.  
-  Demonstra que o estado de alta condutância (*in vivo*) e o balanço excitatório/inibitório estreitam a constante de tempo efetiva de membrana (τ_eff < 5 ms), tornando o neurônio um detector de sincronicidade e de intervalos precisos.
-* **Nível Topológico (Grafos de Mundo Pequeno e Hubs GABAérgicos):**  
-  *Liao, Vasilakos & He (2017)* — *Small-world human brain networks: Perspectives and challenges*, **Neurosci. Biobehav. Rev.**  
-  *Guzman et al. (2016)* — *Synaptic mechanisms of pattern completion in the hippocampal CA3 network*, **Science**.  
-  *Bonifazi et al. (2009)* — *GABAergic hub neurons orchestrate synchrony in developing hippocampal networks*, **Science**.  
-  *Bartos, Vida & Jonas (2007)* — *Synaptic mechanisms of coordinated interneuron network oscillations*, **Nat. Rev. Neurosci.**  
-  Demonstram que a rede hipocampal equilibra segregação modular local e integração global eficiente através de colaterais recorrentes e redes interneuronais acopladas.
-* **Nível Sistêmico e Protocolo Experimental (Comunicação Serial Assíncrona):**  
-  *Mourão et al. (2016)* — *Triggering Different Brain States Using Asynchronous Serial Communication to the Rat Amygdala*, **Cerebral Cortex**.  
-  *Cota, Cançado & Moraes (2023)* — *On temporal scale-free non-periodic stimulation and its mechanisms as an infinite improbability drive of the brain's functional connectogram*, **Frontiers in Neuroinformatics**.  
-  Comprovam experimentalmente no NNC/UFMG que palavras temporais com carga elétrica e frequência média rigorosamente equivalentes acionam estados neurais, dinâmicas de plasticidade e comportamentos completamente distintos.
+O microcircuito modelado integra neurônios piramidais excitatórios de adaptação lenta (*Regular Spiking* — RS) e interneurônios inibitórios rápidos perissomáticos PV⁺ (*Fast Spiking* — FS) governados pelo formalismo dinâmico bidimensional de Izhikevich (2003), acoplados a plasticidade sináptica de curto prazo de Tsodyks-Markram ($\tau_{\text{rec}} = 600\text{ ms}$, $U_{\text{SE}} = 0{,}45$) e condutâncias inibitórias de *shunting* perissomático ($E_{\text{GABA}} = -75\text{ mV}$):
+
+1. **Microestimulação Elétrica Extracelular (`simulacao/S_experimento_1_eletrica_brian2.py`):**  
+   Sob estimulação contínua com envelope teta de 140 ms (7.14 Hz) em malha aberta, demonstra-se colapso vesicular acentuado ($R_{\text{ss}} \approx 0{,}11$, atenuação de 89% no feedback excitatório) e forte inibição por condutância. No domínio escalar de taxa média de disparos, o Teste de Equivalência Biológica (TOST, margem de 15%) comprova equivalência estatística estrita entre padrões temporais ($p_{\text{TOST}} = 7{,}12 \times 10^{-7}$, $p < 0{,}001$), enquanto no domínio temporal a correlação linear de Pearson no PSTH (bins de 14 ms) revela desfasamento estrito ($r = -0{,}3035$).
+
+2. **Transdução Optogenética Comparativa (`simulacao/S_experimento_2_optogenetica_brian2.py`):**  
+   Confrontando Canalrodopsina-2 clássica (ChR2 wild-type, $\tau_{\text{off}} = 13{,}0\text{ ms}$) com a opsina ultrarrápida Chronos ($\tau_{\text{off}} = 3{,}6\text{ ms}$) sob cinética fotoquímica calibrada de 2 estados, comprova-se que, embora Chronos feche entre pulsos adjacentes ($O_{\text{mín}} \approx 0$), a integral intracelular de cálcio $[\text{Ca}^{2+}](t)$ (proxy molecular de c-Fos) é invariante à dose total de fótons pareada em malha aberta ($p = 0{,}2791$), justificando quantitativamente a ausência de diferença na histologia de bancada ($p = 0{,}9888$).
+
+Toda a base bibliográfica que fundamenta estes parâmetros está catalogada em `relatorios/referencias.bib` e detalhada no relatório técnico (`relatorios/relatorio_simulacao.pdf`).
 
 ---
 
@@ -47,14 +43,15 @@ A modelagem é ancorada em três pilares canônicos da literatura revisada por p
 
 ```
 neurotempo/
+├── .gitattributes                  <- Configuração de detecção de linguagem do GitHub
 ├── CHANGELOG.md                    <- Linha do tempo de versões e alterações metodológicas
 ├── LICENSE                         <- Licença GNU General Public License v3 (GPLv3)
 ├── README.md                       <- Documentação geral e visão panorâmica da pesquisa
 ├── requirements.txt                <- Dependências Python reprodutíveis
 │
 ├── simulacao/                      <- Modelos computacionais biofísicos em Brian 2
-│   ├── S_experimento_1_eletrica_wagner_brian2.py
-│   └── S_experimento_2_optogenetica_laura_brian2.py
+│   ├── S_experimento_1_eletrica_brian2.py
+│   └── S_experimento_2_optogenetica_brian2.py
 │
 └── relatorios/                     <- Relatório técnico da dissertação em LaTeX
     ├── relatorio_simulacao.tex     <- Documento mestre em LaTeX
