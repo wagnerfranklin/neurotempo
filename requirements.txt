@@ -1,5 +1,5 @@
 # ==============================================================================
-# DEPENDÊNCIAS DE SOFTWARE: neurostimulation-temporal-coding
+# DEPENDÊNCIAS DE SOFTWARE: NeuroTempo
 # ==============================================================================
 # Modelagem Computacional Biofísica em Brian 2 e Processamento de Sinais
 # Núcleo de Neurociências (NNC - ICB) & PPGEE - UFMG

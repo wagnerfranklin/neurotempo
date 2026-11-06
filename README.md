@@ -1,4 +1,4 @@
-# neurostimulation-temporal-coding
+# NeuroTempo
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Brian 2 Simulator](https://img.shields.io/badge/simulator-Brian%202-brightgreen.svg)](https://briansimulator.org/)
@@ -19,7 +19,7 @@ O projeto investiga os mecanismos biofísicos e topológicos que permitem a micr
 
 O trabalho desenvolve um **modelo computacional biofísico em Brian 2**, confrontando os limites de transdução entre duas modalidades físicas:
 1. **Microestimulação Elétrica Extracelular:** Transmissão instantânea de carga somática com fidelidade temporal sub-milissegúndica.
-2. **Estimulação Optogenética:** Avaliação da filtragem passa-baixas biológica imposta pela cinética de desativação de canalrodopsinas clássicas (ChR2 Wild-Type, $\tau_{\text{off}} \approx 13\text{ ms}$) versus opsinas ultrarrápidas de última geração (Chronos, $\tau_{\text{off}} \approx 3{,}6\text{ ms}$).
+2. **Estimulação Optogenética:** Avaliação da filtragem passa-baixas biológica imposta pela cinética de desativação de canalrodopsinas clássicas (ChR2 Wild-Type, τ_off ≈ 13 ms) versus opsinas ultrarrápidas de última geração (Chronos, τ_off ≈ 3.6 ms).
 
 ---
 
@@ -29,7 +29,7 @@ A modelagem é ancorada em três pilares canônicos da literatura revisada por p
 
 * **Nível Celular (Detecção de Coincidência Temporal):**  
   *König, Engel & Singer (1996)* — *Integrator or coincidence detector? The role of the cortical neuron revisited*, **Trends in Neurosciences**.  
-  Demonstra que o estado de alta condutância (*in vivo*) e o balanço excitatório/inibitório estreitam a constante de tempo efetiva de membrana ($\tau_{\text{eff}} < 5\text{ ms}$), tornando o neurônio um detector de sincronicidade e de intervalos precisos.
+  Demonstra que o estado de alta condutância (*in vivo*) e o balanço excitatório/inibitório estreitam a constante de tempo efetiva de membrana (τ_eff < 5 ms), tornando o neurônio um detector de sincronicidade e de intervalos precisos.
 * **Nível Topológico (Grafos de Mundo Pequeno e Hubs GABAérgicos):**  
   *Liao, Vasilakos & He (2017)* — *Small-world human brain networks: Perspectives and challenges*, **Neurosci. Biobehav. Rev.**  
   *Guzman et al. (2016)* — *Synaptic mechanisms of pattern completion in the hippocampal CA3 network*, **Science**.  
@@ -46,24 +46,22 @@ A modelagem é ancorada em três pilares canônicos da literatura revisada por p
 ## 📁 Arquitetura do Repositório
 
 ```
-neurostimulation-temporal-coding/
-├── CHANGELOG.md                    <- Linha do tempo de versões e alterações detalhadas
+neurotempo/
+├── CHANGELOG.md                    <- Linha do tempo de versões e alterações metodológicas
 ├── LICENSE                         <- Licença GNU General Public License v3 (GPLv3)
 ├── README.md                       <- Documentação geral e visão panorâmica da pesquisa
 ├── requirements.txt                <- Dependências Python reprodutíveis
 │
-├── Codigos/                        <- Modelos computacionais em Brian 2 e rotinas de análise
-│   ├── testes/                     <- Simulações biofísicas, benchmarks e testes de hipóteses
-│   └── analise_bancada_consolidada/<- Processamento e extração de dados experimentais
+├── simulacao/                      <- Modelos computacionais biofísicos em Brian 2
+│   ├── S_experimento_1_eletrica_wagner_brian2.py
+│   └── S_experimento_2_optogenetica_laura_brian2.py
 │
-├── relatorios/                     <- Dissertação e relatórios técnicos em LaTeX
-│   ├── relatorio_simulacao.tex     <- Documento mestre da dissertação
-│   ├── referencias.bib             <- Base bibliográfica completa
-│   ├── tabelas/                    <- Tabelas quantitativas compiladas
-│   └── figuras/                    <- Gráficos e painéis em alta resolução (300 DPI e vetor PDF)
-│
-└── specs/                          <- Especificações formais de engenharia (Spec Kit)
-    └── 001-ca3-recurrent-simulation/ <- Requisitos, equações e planos de implementação
+└── relatorios/                     <- Relatório técnico da dissertação em LaTeX
+    ├── relatorio_simulacao.tex     <- Documento mestre em LaTeX
+    ├── relatorio_simulacao.pdf     <- Relatório compilado
+    ├── referencias.bib             <- Base bibliográfica completa
+    ├── figuras/simulacao/          <- Gráficos e painéis em alta resolução
+    └── tabelas/simulacao/          <- Tabelas quantitativas formatadas
 ```
 
 ---
@@ -74,8 +72,8 @@ O projeto utiliza o simulador **Brian 2** em ambiente Python 3:
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/wagnerfranklin/neurostimulation-temporal-coding.git
-cd neurostimulation-temporal-coding
+git clone https://github.com/wagnerfranklin/neurotempo.git
+cd neurotempo
 
 # 2. Configurar o ambiente virtual
 python -m venv .venv
@@ -86,13 +84,11 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-As simulações numéricas e análises estatísticas são executadas a partir do diretório raiz utilizando os scripts localizados em `Codigos/testes/`.
-
 ---
 
 ## 📜 Licença e Propriedade Intelectual
 
-Este projeto é software livre acadêmico licenciado sob os termos da **GNU General Public License v3 (GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para obter os termos integrais de cópia, distribuição e modificação.
+Este projeto é distribuído sob os termos da licença **GNU General Public License v3 (GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para obter os termos integrais de uso, modificação e distribuição de código aberto acadêmico.
 
 ---
 
